@@ -1,0 +1,10 @@
+############################### Areas Principales de GIT
+
+############################### GIT CONFIG
+git config --global -> "global" (a todos los epositorios en un pc)
+git config --local -> "local" (a un repositorio)
+git config --global user.email "email" -> "email" sera el email que le dara a los commits hehos.
+[git config --global user.name] "name" -> "name" sera el nombre que le dara a los commits hehos.
+   ^          ^      ^    ^ 
+ COMANDO    TIPO  sector  configuracion-del-sector
+ git config -l -> muestra la lista de las configuraciones de git
