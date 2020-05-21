@@ -35,3 +35,6 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
  ############################### GIT LOG
  git log -> muestra los commit realizados en el repositorio con informacion basica de cada uno. (salir con Q)
 
+############################### GIT CHECKOUT
+git checkout "archivo" -> devuelve el "archivo" al estado de su ultimo commit en el repositorio
+git checkout -f -> forza a que el espacio de trabajo completo regrese al ultimo commit realizado.
