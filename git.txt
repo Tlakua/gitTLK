@@ -1,6 +1,9 @@
 Todo repositorio seria un repositorio siempre y cuando contenga una carpeta llamada ".git"
 
-############################### Areas Principales de GIT
+############################### Estados Principales de GIT
+1- Espacio de trabajo -> es la carpeta y el arbol que la sucede que esta marcada como repositorio, la carpeta .git no forma parte del espacio de trabajo.
+2- Area de preparacion -> el area de preparacion es cuando andes de confirmar un commit le agregamos los archivos con "git add".
+3- Repositorio confirmado -> cuando se confirma un commit "git vommit" pasa del area de preparacion al repositorio.
 
 ############################### GIT CONFIG
 git config --global -> "global" (a todos los epositorios en un pc)
@@ -16,3 +19,6 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
 
  ############################### GIT CLONE
  git clone -> clona (copia) un repositorio existente
+
+ ############################### GIT STATUS
+ git status -> muestra la diferencia entre lo que esta confirmado en el reporsitorio y el espacio de trabajo.
