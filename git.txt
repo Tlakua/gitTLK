@@ -37,12 +37,23 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
  git log --oneline -> muestra en una sola linea los commit realizados con un hash resumido y el msj del commit.
  git log --oneline -n "num" -> muestra un "git log --oneline" con la cantidad de "num" de commit.
  git log --raw -> muestra los commits pero agrega la informacion de los archivos que se modificaron agreagaron o borraron en cada uno.
+ git log --oneline --all -> muestra todos los commits de todas las ramas. 
+ ***git log --oneline-- graph --decorate -> muestra en forma de arbol los commits y sus ramas.
 
 ############################### GIT CHECKOUT
 git checkout "archivo" -> devuelve el "archivo" al estado de su ultimo commit en el repositorio
 git checkout -f -> forza a que el espacio de trabajo completo regrese al ultimo commit realizado.
 git checkout "IDcommit" -> sirve para regresar el espacio de trabajo al commit con el hash: "IDcommit" de nuestra repositorio.
 git checkout master -> regresa el espacio de trabajo al ultimo commit realizado. El que esta en el master
+git checkout "branch" -> nos mueve entre ramas del repositorio.
+git checkout -b "branch" -> crea una nueva rama en el repositorio con el nombre: "name"
+
+############################### GIT MERGE
+git merge "branch" -> mescla la rama "branch" con la rama en la que estamos parados.
+
+############################### GIT BRANCH
+git branch -> enlista las ramas del repositorio.
+git branch -D "branch" -> elimina la rama "branch".
 
 ############################### GIT RESTORE
 git restore --stage "archivo" -> saca del area de preparacion el "archivo" seleccionado.
