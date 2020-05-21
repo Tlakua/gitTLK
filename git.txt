@@ -1,3 +1,5 @@
+Todo repositorio seria un repositorio siempre y cuando contenga una carpeta llamada ".git"
+
 ############################### Areas Principales de GIT
 
 ############################### GIT CONFIG
@@ -8,3 +10,9 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
    ^          ^      ^    ^ 
  COMANDO    TIPO  sector  configuracion-del-sector
  git config -l -> muestra la lista de las configuraciones de git
+
+ ############################### GIT INIT
+ git init -> iniciamos un nuevo repositorio
+
+ ############################### GIT CLONE
+ git clone -> clona (copia) un repositorio existente
