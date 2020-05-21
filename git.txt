@@ -34,6 +34,9 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
 
  ############################### GIT LOG
  git log -> muestra los commit realizados en el repositorio con informacion basica de cada uno. (salir con Q)
+ git log --oneline -> muestra en una sola linea los commit realizados con un hash resumido y el msj del commit.
+ git log --oneline -n "num" -> muestra un "git log --oneline" con la cantidad de "num" de commit.
+ git log --raw -> muestra los commits pero agrega la informacion de los archivos que se modificaron agreagaron o borraron en cada uno.
 
 ############################### GIT CHECKOUT
 git checkout "archivo" -> devuelve el "archivo" al estado de su ultimo commit en el repositorio
