@@ -21,7 +21,7 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
  git clone -> clona (copia) un repositorio existente
 
  ############################### GIT STATUS
- git status -> muestra la diferencia entre lo que esta confirmado en el reporsitorio y el espacio de trabajo.
+ git status -> muestra los cabios qu se pueden agreagar a un commit.
 
  ############################### GIT ADD
  git add "archivo" -> "archivo" agrega el cambio, insercio o eliminacion de cada cambio en el espacio de trabajo.
@@ -41,3 +41,7 @@ git checkout -f -> forza a que el espacio de trabajo completo regrese al ultimo 
 
 ############################### GIT RESTORE
 git restore --stage "archivo" -> saca del area de preparacion el "archivo" seleccionado.
+
+############################### GIT DIFF
+git diff "archivo" -> muestra la diferencia que hay entre el "archivo" guardado en el repositorio y el que tengo en el espacio de trabajo.
+git diff --stat "archivo" -> muestra una estadistica de lo que se ha hecho en el "archivo"
