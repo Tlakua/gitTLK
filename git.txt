@@ -5,6 +5,17 @@ Todo repositorio seria un repositorio siempre y cuando contenga una carpeta llam
 2- Area de preparacion -> el area de preparacion es cuando andes de confirmar un commit le agregamos los archivos con "git add".
 3- Repositorio confirmado -> cuando se confirma un commit "git vommit" pasa del area de preparacion al repositorio.
 
+############################### Coflictos en Git
+Cuando git manda un conflicto hay que ir al editor de texto en el que estamos trabajando (siempre y cuando el editor tenga soporte git)
+Una vez ahi tenemos que solucinar manualmente los conflictos borrando y dejando lo deseado.
+
+############################### Git ignore
+el archivo ".gitignore" es una lista de archivos o carpetas que no queremos que sean registrados en el repositorio.
+esto quiere decir que los archivos en el gitignore no formaran parte del espacio de trabajo de nuestro repositorio.
+el archivo .gitignore se crea manualmente.
+se debe hacer commit del archivo ignore ya que éste si formara parte del repositorio.
+si dentro del gitignore se escribe "./CISCO" -> la carpeta llamada CISCO no se tomaria en cuenta para el repositorio.
+
 ############################### GIT CONFIG
 git config --global -> "global" (a todos los epositorios en un pc)
 git config --local -> "local" (a un repositorio)
