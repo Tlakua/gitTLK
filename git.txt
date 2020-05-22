@@ -50,6 +50,7 @@ git checkout -b "branch" -> crea una nueva rama en el repositorio con el nombre:
 
 ############################### GIT MERGE
 git merge "branch" -> mescla la rama "branch" con la rama en la que estamos parados.
+git merge --abort -> aborta la fusion de dos ramas despues de encontrar conflictos.
 
 ############################### GIT BRANCH
 git branch -> enlista las ramas del repositorio.
