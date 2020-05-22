@@ -16,6 +16,14 @@ el archivo .gitignore se crea manualmente.
 se debe hacer commit del archivo ignore ya que éste si formara parte del repositorio.
 si dentro del gitignore se escribe "./CISCO" -> la carpeta llamada CISCO no se tomaria en cuenta para el repositorio.
 
+############################### LLave SSH
+En linux el comando desde la terminal para generar una llave de 4096 bits es, ya que por defecto la crea de 2048:
+* ssh-keygen -t rsa -b 4096
+se puede agregar -C para especificar la llave a una cuenta:
+* ssh-keygen -t rsa -b 4096 -C -> Especifica la información del campo de comentario en el archivo de la clave. Utilice comillas si la cadena contiene espacios. Si no especifica un comentario cuando crea una clave, se crea un comentario predeterminado que incluye el tipo, el creador, la fecha y la hora de la clave.
+Nos dira un directorio de nuestro PC en el que se creara la clave, podemos dejarlo o modificarlo.
+se crea la llave publica y privada, para vincular el envio de datos entre nuestra PC y el servidor remoto en el que se encuentra nuestro repositorio, debemos copiar toda la llave PUBLICA a nuestra plataforma creando una llave SSH en la misma.
+
 ############################### GIT CONFIG
 git config --global -> "global" (a todos los epositorios en un pc)
 git config --local -> "local" (a un repositorio)
