@@ -75,6 +75,11 @@ git merge --abort -> aborta la fusion de dos ramas despues de encontrar conflict
 git branch -> enlista las ramas del repositorio.
 git branch -D "branch" -> elimina la rama "branch".
 
+Para crear una rama remota debemos crearla local normalmente y despues:
+1.- con checkout pasarnos a la nueva rama.
+2.- subir cambios al repo remoto con push, pero con un origin diferente a master, el comando seria: 
+* git push origin "branch" -> donde branch es el nombre de la nueva rama.
+
 ############################### GIT PUSH
 git push origin master -> sube todos commits locales al repo remoto, marcando como origen el master remoto.
 git push -> subir cambios al repo remoto
