@@ -84,6 +84,9 @@ Para crear una rama remota debemos crearla local normalmente y despues:
 git push origin master -> sube todos commits locales al repo remoto, marcando como origen el master remoto.
 git push -> subir cambios al repo remoto
 
+*borrar una rama remota:
+git push --delete origin "branch" -> borra la rama "branch" del repositorio remoto.
+
 ############################### GIT PULL
 git pull -> baja cambios del repo remoto
 
@@ -99,3 +102,8 @@ git restore --stage "archivo" -> saca del area de preparacion el "archivo" selec
 ############################### GIT DIFF
 git diff "archivo" -> muestra la diferencia que hay entre el "archivo" guardado en el repositorio y el que tengo en el espacio de trabajo.
 git diff --stat "archivo" -> muestra una estadistica de lo que se ha hecho en el "archivo"
+
+############################### Herramientas graficas de git
+Editores de rexto, como VisualStudioCode, AndroidStudio, CodeBlocks, etc.
+GitKraken.
+SourceTree (muy parecido a gitKraken).
