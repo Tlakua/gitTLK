@@ -75,6 +75,19 @@ git merge --abort -> aborta la fusion de dos ramas despues de encontrar conflict
 git branch -> enlista las ramas del repositorio.
 git branch -D "branch" -> elimina la rama "branch".
 
+############################### GIT PUSH
+git push origin master -> sube todos commits locales al repo remoto, marcando como origen el master remoto.
+git push -> subir cambios al repo remoto
+
+############################### GIT PULL
+git pull -> baja cambios del repo remoto
+
+############################### GIT FETCH
+git fech -> descarga la informacion del repositorio hacia nuestra PC, por ejemplo al hacer git log para mostrar toda la info.
+
+############################### GIT REMOTE
+git remote -v -> nos muestra lo que se puede hacer con respecto al repositorio remoto, baja, subir descargar informacion.
+
 ############################### GIT RESTORE
 git restore --stage "archivo" -> saca del area de preparacion el "archivo" seleccionado.
 
