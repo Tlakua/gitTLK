@@ -49,7 +49,8 @@ git config --global user.email "email" -> "email" sera el email que le dara a lo
  ############################### GIT COMMIT 
  git commit -> confirma un commit para quedar guardado en el repositorio. Mana a un editor de texto en el que pide el msg del commit.(no se permite un commit sin msg)
  git commit -m "msg" -> "msg" sera el mensaje del commit, confirma el commit directamente
- git commit -am "msg" -> sin necesidad de "git add" hace el commit de un solo paso para los archivos MODIFICADOS¡. 
+ git commit -am "msg" -> sin necesidad de "git add" hace el commit de un solo paso para los archivos MODIFICADOS¡.
+ git commit --amend -m "your new message" -> modifica el mensaje del ultimo commit realizado
 
  ############################### GIT LOG
  git log -> muestra los commit realizados en el repositorio con informacion basica de cada uno. (salir con Q)
