@@ -68,6 +68,11 @@ git checkout master -> regresa el espacio de trabajo al ultimo commit realizado.
 git checkout "branch" -> nos mueve entre ramas del repositorio.
 git checkout -b "branch" -> crea una nueva rama en el repositorio con el nombre: "name"
 
+############################### CLONAR RAMAS REMOTAS
+git branch -a -> Vemos la lista de branches que existen, tanto localmente como remotamente.
+git checkout -b nombre_del_branch origin/nombre_del_branch -> Creamos un nuevo branch localmente, basados en el branch remoto.
+git pull origin nombre_del_branch
+
 ############################### GIT MERGE
 git merge "branch" -> mescla la rama "branch" con la rama en la que estamos parados.
 git merge --abort -> aborta la fusion de dos ramas despues de encontrar conflictos.
