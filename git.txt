@@ -109,6 +109,11 @@ git restore --stage "archivo" -> saca del area de preparacion el "archivo" selec
 git diff "archivo" -> muestra la diferencia que hay entre el "archivo" guardado en el repositorio y el que tengo en el espacio de trabajo.
 git diff --stat "archivo" -> muestra una estadistica de lo que se ha hecho en el "archivo"
 
+############################### eliminacion de commits
+git reset --hard HEAD~1 -> Con esta opción estamos indicando que retrocedemos a el comit HEAD~1 y perdemos todas las confirmaciones posteriores. HEAD~1 es un atajo para apuntar al commit anterior al que nos encontramos. CUIDADO, con la opcion –head, ya que como he dicho se borran todos los commits posteriores al commit al que indicamos.
+
+git reset --soft HEAD~1 -> con esta opción estamos indicando que retrocedemos a el commit HEAD~1 y no perdemos los cambios de los commits posteriores. Todos los cambios aparecerán como pendientes para realizar un commit.
+
 ############################### Herramientas graficas de git
 Editores de rexto, como VisualStudioCode, AndroidStudio, CodeBlocks, etc.
 GitKraken.
